@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+
+    <link rel="stylesheet" href="index.css">
+    <title>Locate | Space Station</title>
+    
+  </head>
+  <body>
+    <section class="container">
+        <div class="head">
+            <h2 >Where is Space Station</h2>
+        </div>
+        
+        <div class="parameters">
+            <h3>Latitude :<p id="lat">Position</p></h3>
+            <h3>Longitude :<p id="lng">Position</p></h3>
+            <h3>Country :<p id="country">Country</p></h3>
+            <h3>Place :<p id="place">Place</p></h3>
+        </div>
+        
+        <div id="map"></div>
+
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
