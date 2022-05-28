@@ -44,8 +44,8 @@ const getPlaceName =  async(lati,long)=>{
     const data = await response.json();
     const place = data.name;
     const country = data.sys.country;
-    document.getElementById('country').innerText = country;
-    document.getElementById('place').innerText = place;
+    document.getElementById('country').innerText = country?country:'Over Ocean' ;
+    document.getElementById('place').innerText = place?place:'Over Ocean';
     // console.log(data);
     console.log(country)
     console.log(place)
